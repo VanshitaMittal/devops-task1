@@ -1,0 +1,20 @@
+chart.yaml :
+apiVersion: v2
+name: nodejs-app
+version: 1.0.0
+description: Helm chart for a Node.js application
+
+
+values.yaml:
+image:
+  repository: your-docker-registry/your-nodejs-app-name
+  tag: latest
+
+service:
+  name: nodejs-app
+  type: ClusterIP
+  port: 3000
+
+ingress:
+  enabled: false
+  hostname: app.example.com
