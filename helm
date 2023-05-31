@@ -1,11 +1,11 @@
-chart.yaml :
+chart.yaml code->
 apiVersion: v2
 name: nodejs-app
 version: 1.0.0
 description: Helm chart for a Node.js application
 
 
-values.yaml:
+values.yaml code->
 image:
   repository: your-docker-registry/your-nodejs-app-name
   tag: latest
